@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오늘의 한 마디</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>드로잉 웹앱</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>오늘의 한 마디</h1>
-        <div id="date"></div>
-        <div id="quote" class="quote">여기에 한 마디가 표시됩니다.</div>
-        <button id="randomBtn">랜덤 한마디 출력</button>
-        <button id="modeToggle">다크모드</button>
-    </div>
-    <script src="script.js"></script>
+  <!-- 드로잉 도구 컨트롤 영역 -->
+  <div id="controls">
+    <!-- 색상 선택 -->
+    <label for="colorPicker">색상:</label>
+    <input type="color" id="colorPicker" value="#000000">
+    <!-- 선 굵기 조절 -->
+    <label for="lineWidth">굵기:</label>
+    <input type="range" id="lineWidth" min="1" max="10" value="2">
+    <!-- 캔버스 초기화 버튼 -->
+    <button id="clearBtn">초기화</button>
+  </div>
+  <!-- 그림을 그릴 캔버스 영역 -->
+  <canvas id="drawingCanvas" width="500" height="400"></canvas>
+  <!-- 드로잉 기능 JS 연결 -->
+  <script src="app.js"></script>
 </body>
 </html>
