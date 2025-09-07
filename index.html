@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 첫 번째 웹페이지</title>
+    <title>오늘의 한 마디</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script> 
 </head>
 <body>
-    <h1>h1입니다. 안녕하세요</h1>
-    <h2>저는 h2입니다.</h2>
-    <p> 이건 패러그래프라고 하는데요..</p>
-    <button onclick="increase_like()"> 눌러봐    </button>
-    <p id="like_count">좋아요 : 0</p>
+    <div class="container">
+        <h1>오늘의 한 마디</h1>
+        <div id="date"></div>
+        <div id="quote" class="quote">여기에 한 마디가 표시됩니다.</div>
+        <button id="randomBtn">랜덤 한마디 출력</button>
+        <button id="modeToggle">다크모드</button>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script>
-
-</script>
 </html>
